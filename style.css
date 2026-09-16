@@ -183,3 +183,167 @@ footer {
         align-items: stretch;
     }
 }
+
+.seat-container {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.selected-bus {
+    color: #667085;
+    margin: 10px 0 25px;
+}
+
+.driver {
+    width: 180px;
+    margin: 0 auto 25px;
+    padding: 12px;
+    text-align: center;
+    background: #eef2f6;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.seat-map {
+    max-width: 360px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.seat {
+    width: 58px;
+    height: 45px;
+    padding: 0;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.seat.available {
+    background: #e8f5e9;
+    color: #176b2c;
+    border: 1px solid #9ad6a5;
+}
+
+.seat.sold {
+    background: #f8d7da;
+    color: #842029;
+    border: 1px solid #e5aeb3;
+}
+
+.seat.selected {
+    background: #ffe08a;
+    color: #664d03;
+    border: 2px solid #d99d00;
+}
+
+.aisle {
+    width: 20px;
+}
+
+.seat-legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 0;
+    font-size: 14px;
+}
+
+.booking-summary {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f7f8fa;
+    border-radius: 10px;
+}
+
+.booking-summary p {
+    margin: 10px 0;
+}
+
+.continue-button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.booking-form label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.booking-form input {
+    width: 100%;
+    height: 48px;
+    padding: 0 12px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.booking-form button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.booking-number {
+    background: #eef3ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.booking-number strong {
+    font-size: 22px;
+}
+
+.search-summary {
+    color: #667085;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+
+    .seat-container,
+    .booking-form {
+        padding: 20px;
+    }
+
+    .seat {
+        width: 48px;
+        height: 42px;
+    }
+
+    .aisle {
+        width: 10px;
+    }
+
+    .seat-legend {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+}
