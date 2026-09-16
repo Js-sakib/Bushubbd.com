@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusHubBD - Bangladesh Bus Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🚌 BusHubBD</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">My Tickets</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+
+        <h1>Book Your Bus Ticket</h1>
+
+        <p>
+            Easy and secure bus ticket booking across Bangladesh.
+        </p>
+
+        <div class="search-box">
+
+            <div class="field">
+                <label>From</label>
+                <select id="from">
+                    <option>Dhaka</option>
+                    <option>Chattogram</option>
+                    <option>Cumilla</option>
+                    <option>Sylhet</option>
+                    <option>Cox's Bazar</option>
+                    <option>Rajshahi</option>
+                    <option>Khulna</option>
+                </select>
+            </div>
+
+            <div class="swap">⇄</div>
+
+            <div class="field">
+                <label>To</label>
+                <select id="to">
+                    <option>Cumilla</option>
+                    <option>Dhaka</option>
+                    <option>Chattogram</option>
+                    <option>Sylhet</option>
+                    <option>Cox's Bazar</option>
+                    <option>Rajshahi</option>
+                    <option>Khulna</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Travel Date</label>
+                <input type="date" id="date">
+            </div>
+
+            <div class="field">
+                <label>Passengers</label>
+                <select id="passengers">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+
+            <button onclick="searchBuses()">
+                🔎 Search Buses
+            </button>
+
+        </div>
+
+    </section>
+
+    <section id="results" class="results"></section>
+
+</main>
+
+<footer>
+    <p>© 2026 BusHubBD.com — Bangladesh Bus Ticket Booking</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
